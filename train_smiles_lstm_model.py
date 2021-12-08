@@ -10,9 +10,9 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='Distribution learning benchmark for SMILES RNN',
                                      formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument('--train_data', default='data/guacamol_v1_train.smiles',
+    parser.add_argument('--train_data', default='/home/boittier/guacamol_baselines/data/guacamol_v1_train.smiles',
                         help='Full path to SMILES file containing training data')
-    parser.add_argument('--valid_data', default='data/guacamol_v1_valid.smiles',
+    parser.add_argument('--valid_data', default='/home/boittier/guacamol_baselines/data/guacamol_v1_valid.smiles',
                         help='Full path to SMILES file containing validation data')
     parser.add_argument('--batch_size', default=512, type=int, help='Size of a mini-batch for gradient descent')
     parser.add_argument('--valid_every', default=1000, type=int, help='Validate every so many batches')
