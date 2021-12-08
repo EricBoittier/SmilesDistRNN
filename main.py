@@ -19,5 +19,4 @@ device = "cuda"
 model = load_rnn_model(model_def, model_path, device, copy_to_cpu=True)
 generator = SmilesRnnGenerator(model=model, device=device)
 
-sampler = SmilesRnnSampler(device)
-sampler.sample(generator, 10)
+generator.generate(10)
