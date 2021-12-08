@@ -15,6 +15,6 @@ class SmilesRnnGenerator(DistributionMatchingGenerator):
         self.model = model
         self.device = device
 
-    def generate(self, number_samples: int) -> List[str]:
+    def generate(self, number_samples: int, max_seq_len=100) -> List[str]:
         sampler = SmilesRnnSampler(device=self.device)
-        return sampler.sample(model=self.model, num_to_sample=number_samples)
+        return sampler.sample(model=self.model, num_to_sample=number_samples, max_seq_len=max_seq_len)
