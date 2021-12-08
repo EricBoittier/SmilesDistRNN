@@ -8,8 +8,8 @@ import torch
 from guacamol.assess_distribution_learning import assess_distribution_learning
 from guacamol.utils.helpers import setup_default_logger
 
-from .rnn_utils import load_rnn_model, set_random_seed
-from .smiles_rnn_generator import SmilesRnnGenerator
+from rnn_utils import load_rnn_model, set_random_seed
+from smiles_rnn_generator import SmilesRnnGenerator
 
 if __name__ == '__main__':
     setup_default_logger()

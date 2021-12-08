@@ -9,8 +9,8 @@ import torch
 from guacamol.utils.data import remove_duplicates
 from torch.utils.data import TensorDataset
 
-from .rnn_model import SmilesRnn
-from .smiles_char_dict import SmilesCharDictionary
+from rnn_model import SmilesRnn
+from smiles_char_dict import SmilesCharDictionary
 
 
 def get_tensor_dataset(numpy_array):
